@@ -36,13 +36,13 @@ def send_email(customer_email, bill_amount):
     msg = EmailMessage()
     msg.set_content(f"Your total bill amount is: ${bill_amount:.2f} (including GST)")
     msg['Subject'] = 'Your Supermarket Bill'
-    msg['From'] = 'palanisamyhema4@gmail.com'
+    msg['From'] = 'deenayogi66@gmail.com'
     msg['To'] = customer_email
     
     # Send email (simulated)
     try:
         with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-            smtp.login('palanisamyhema4@gmail.com', 'jsiu mvxj oyyk mady')
+            smtp.login('deenayogi66@gmail.com', 'otnr ucrd hkob csdj')
             smtp.send_message(msg)
         print(f"Bill sent to {customer_email}.")
     except Exception as e:
